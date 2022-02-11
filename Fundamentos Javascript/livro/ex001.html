@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Programa Olá Você!</h1>
+    <p> Nome: <input type="text" id="nome">
+        <input type="button" value="Mostrar" onclick="mostrarOla()"></p>
+    <p id="resposta"></p>
+
+    <script>
+        function mostrarOla(){
+            var nome = document.getElementById("nome").value ;
+            document.getElementById("resposta").textContent = "Olá " + nome;
+
+            
+        }
+    </script>
+
+    <!--
+        Listeners
+        elemento.addEventListener('evento', função);
+
+    -->
+
+
+    <!--Precedencia
+        ()
+        **  potenciação
+        * / % multiplicação, divisão e resto
+        + -
+        !
+        &&
+        ||
+
+    -->
+
+    <!--RELACIONAIS
+        > maior
+        < menor
+        >= maior igual
+        <= menor igual
+        == igual
+        != diferente
+        === igualdade restrita, se são identicos os valores e tipo
+
+        LÓGICOS
+        !  não     negação
+        && e   conjunção
+        || e ou  disjunção
+
+        TERNÁRIO
+        ?:
+        teste ? verdadeiro : falso
+        Teste: é um teste que retorna verdadeiro ou falso
+        Verdadeiro: O que vai acontecer se a resposta for verdadeira
+        Falso: O que vai acontecer se a resposta for falsa
+
+
+    -->
+    
+
+</body>
+</html>

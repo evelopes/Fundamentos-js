@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: red;
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var  n1 = 1545.80
+        alert(n1.toFixed(2).replace('.', ','))
+        alert(n1.toLocaleString('pt-BR'))  // .toLocaleString('pt-BR') pega o padrão de numeração brasileiro
+        alert(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL' })) // pega o padrão monetário brasileirp
+    </script>
+
+    <!-- CTRL + L limpar terminal -->
+    https://www.youtube.com/watch?v=hZG9ODUdxHo
+</body>
+</html>
