@@ -1,0 +1,126 @@
+/*Uma amiga de Alex deu uma coleção de filmes para ela de presente, e Alex está animada para assistir todos eles 
+o mais rápido possível. A duração dos filmes é dada em um vetor duracoes [n], onde o n é o número do filme, e 
+cada filme dura entre 1.01 e 3.00 horas (até duas casas decimais). Alex quer gastar no máximo 3.00 horas 
+assistindo filmes por dia, mas também quer assistir a coleção completa no mínimo números de dias possível. Alex 
+nunca para de assistir um filme na metade. Isso é, se Alex escolheu um filme, Alex assistir um filme por completo 
+no mesmo dia. Ache o número mínimo de dias necessários para assistir a coleção de filme completa.
+Exemplo:
+n = 5
+duracoes = [ 1.90, 1.04, 1.25, 2.5, 1.75 ]
+
+Considerando um passo a passo de 1 em 1, Alex consegue assistir os filmes em mínimo de 3 dias:
+1. Dia 1: primeiro e segundos filmes: 1.90 + 1.04 = 2.94 _< 3.00
+2. Dia 2: quarto filme: 2.5 _< 3.00
+3. Dia 3: terceiro e quinto filmes: 1.25 + 1.75 = 3.00_<
+
+Descrição da Função:
+Complete a função acharMinimoDeDias
+
+acharMinimoDeDias tem o seguinte parâmetro:
+- float duracoes [n] : a duração de cada filme.
+
+Retorna:
+- int: o mínimo número de dias necessários para assistir todos os filmes.
+
+Restrições:
+1 _< n _< 1000
+1.01 _< duracoes [i] _< 3.0*/
+
+var duracoes = [5, 1.6, 2.5, 2.0, 1.01, 1.05,3.5];
+
+let somaDias = 0;
+let  lista1 = []
+let  lista2 = []
+let lista3 = []
+let restoLista = 0
+let somar = 0
+
+duracoes.sort()
+duracoes.forEach(funcaoLista)
+function funcaoLista(duracoes, index) {
+  if(duracoes < 3){
+lista1.push(duracoes)
+//console.log(novaLista + "  sem maiores q 3")
+  }
+}
+
+lista1.forEach(funcaoLista2)
+function funcaoLista2(lista1, index){
+  if(lista1 > 2){
+    somaDias = somaDias + 1
+      }
+      else{
+        lista2.push(lista1)
+        somar(lista2)
+        console.log(lista2)
+      }
+
+      function somar(lista2){
+        for (let index = 0; index < lista2.length; index++) {
+          if(lista2[index--] + lista1[index] <= 3){
+            console.log("funciona porra")
+            lista2.pop()
+            lista2.splice(index,1)
+          }else {
+            console.log("funciona")
+          }
+          
+         
+          
+        }
+
+
+        restoLista = lista2 + lista2[i++]
+        //console.log("somar : " + somar)
+      }
+}
+/*
+lista2.forEach(funcaoLista3)
+function funcaoLista3(lista2){
+      console.log(lista2)
+      
+    
+    
+  }
+*/
+
+
+
+/*
+
+console.log("essa é a nova lista, sem 3+       "+ novaLista)
+console.log("essa é a lista 3, superior a 2+   "+ lista3)
+console.log("essa é a lista 4, inferior a 2   "+ lista4)
+console.log(somaDias)
+
+
+
+function acharMinimoDeDias(duracoes, index) {
+        if(duracoes < 3){
+  novaLista.push(duracoes)
+  console.log(novaLista)
+        }
+     
+    else if(duracoes > 2){
+      somaDias+= 1
+      duracoes.splice(i,1)
+      console.log(duracoes + ">2 e <3")
+        }
+    else if (duracoes+duracoes[i++]<=3){
+      somaDias+= 1
+      duracoes.splice(i,2)
+      console.log(duracoes + "du+du <=3")
+           
+    } 
+ 
+    else if (duracoes.length == 1) { 
+      somaDias+=1
+      duracoes.splice(i,1)
+      console.log(duracoes + "==1")
+         }
+        
+    
+  }      
+
+
+ */

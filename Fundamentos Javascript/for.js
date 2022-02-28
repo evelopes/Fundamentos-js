@@ -12,8 +12,3 @@ então i = 1 e o array[1] até finalizar a execução de todo array
 
 */
 
-
-alice = 0
-bob = 0
-if a[0] > b[0]:
-alice += 1
