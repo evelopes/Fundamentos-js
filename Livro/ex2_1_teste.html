@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Nome: <input type="text" id="nome" required></p>
+    <p>Data de Nascimento: <input type="date" id="data" required></p>
+    <p>Cor preferida: <input type="color" id="cor" required autofocus ></p>
+    <input type="button" value="enviar" onclick="mostrarValores()" >
+    <p id="dados"></p>
+
+
+    <footer style="margin-top: 200px">
+      <a href="ex2_1.html"><input type="button" value="Exercicio anterior" /></a
+      ><a href="ex2_1_teste1.html"
+        ><input type="button" value="Outro Exercicio"
+      /></a>
+    </footer>
+
+    <script>
+        
+        function mostrarValores(){
+            let nome = document.getElementById("nome").value;
+            let data = document.getElementById("data").value;
+            let cor = document.getElementById("cor").value;
+            
+            document.getElementById("dados").textContent = nome + " nasceu em " + data + " gosta da cor " + cor ;
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+/*Definindo a variável*/
+:root {
+  --texto: #d0d0d0;
+}
+
+/*Aplicando a cor para o texto dos parágrafos*/
+p {
+  color: var(--texto);
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <article id="resposta"></article>
+    <script>
+
+        let valor = "olá"
+        let result = document.getElementById("resposta");    //elemento pai do node
+
+
+        const resposta1 = document.createElement("p");    //cria o elemento (tag)
+        const resultado1 = document.createTextNode(valor);    //adiciona o conteúdo
+        resposta1.appendChild(resultado1);  //coloca o conteúdo ao elemento criado
+        result.appendChild(resposta1);   //adiciona o elemento em um elemento existente na página
+
+    </script>
+</body>
+
+</html>

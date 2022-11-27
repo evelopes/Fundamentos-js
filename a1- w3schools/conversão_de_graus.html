@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Graus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="evelopes.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Conversor de escalas termométricas</h1>
+    <p>Informe o numero que deseja converter e a escala termométrica ele está!</p>
+    <article id="principal">
+         <input type="text" name="graus" id="graus" placeholder="número ex: 55.2">
+        <select name="tipos" id="tipos">
+            <option value="0">Celsius</option>
+            <option value="1">Fahrenheit</option>
+            <option value="2">Kelvin</option>
+        </select>
+        <input type="button" value="Converter" onclick="qualAEscala()">
+    </article>
+    <article id="resposta"></article>
+
+    <script src="conversao.js"></script>
+    <script src="testes.js"></script>
+</body>
+
+</html>

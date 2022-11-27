@@ -1,0 +1,36 @@
+body{
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 100px;
+}
+
+#calculadora{
+    display: flex;
+    flex-wrap: wrap;
+    width: 340px;
+    background-color: aliceblue;
+    padding: 50px;
+    border-radius: 10%;
+    
+}
+
+.valor{
+    width: 80px;
+    height: 80px;
+    color: black;
+}
+
+p{
+    font-weight: 900;
+    font-size: 24px;
+    align-content: center;
+}
+
+button{
+    width: 40px;
+    background-color: aqua;
+}
+
+.conta{
+    width: 100%;
+}

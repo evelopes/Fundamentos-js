@@ -1,5 +1,10 @@
-const numeros = [43, 50, 65, 12]
+const arr = [3,2,1,2,7]
 
-const soma = numeros.reduce((acum, atual) => atual + acum, 0)
+let arrayFiltrado = arr.filter(function(valor,proximo){
+    return arr.indexOf(valor) == proximo;
+});
 
-console.log(soma) //170
+
+const soma = arrayFiltrado.reduce((acum, atual) => atual + acum, 0)
+
+console.log(soma)

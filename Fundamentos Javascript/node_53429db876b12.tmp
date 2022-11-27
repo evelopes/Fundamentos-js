@@ -1,0 +1,14 @@
+let multiplicacao = 0;
+let index = 1;
+let index1 = 1;
+let valor = 1;
+
+do{
+do{ multiplicacao = index * valor;
+    console.log( valor + " x " + index + " = " + multiplicacao  )  
+    index++
+}
+while(index < 11);
+valor++
+}
+while(index1 < 11)

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Bases</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body><h1>Conversor de bases 👩‍💻</h1>
+    <form action="">
+        <label for="numeros">Informe o numero a ser convertido:</label><br>
+        <input type="text" id="numereco" ><BR><BR>
+
+          <label for="bases">Em qual base está o número acima?</label><BR>
+            <select name="bases" id="bases">
+                <option value="2">Binaria</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+<br>
+<br>
+        <input type="button" value="CONVERTER" onclick="converterParaDecimal()">
+      </form>
+
+      <BR><BR>
+        <div  id="resultado">
+      <p>Binário: <i id="resultadoBin"></i></p>
+      <p>Decimal: <i id="resultadoDec"></i></p>
+      <p>Octal: <i id="resultadoOct"></i></p>
+      <p>Hexadecimal: <i id="resultadoHex"></i></p></div>
+
+<script src="decimalParaQualquerBase.js"></script>
+<script src="qualquerBaseParaDecimal.js"></script>
+<footer>
+    Desenvolvido por <a href="https://www.linkedin.com/in/evelinlopes/">Eve Lopes 👩‍💻</a> - <a href="https://github.com/evelopes/conversor_de_bases">Conversor de Bases</a>
+</footer>
+</body>
+</html>

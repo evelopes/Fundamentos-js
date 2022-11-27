@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/daq0_xfp8_211214.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+    background-size: 30%;
+}
+
+#principal {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+
+input,
+option,
+select {
+    font-size: 1.5rem;
+    margin: 0 0.1em;
+    border-radius: 1.5em;
+    border: rgb(69, 69, 69) solid 1px;
+    padding: 0 0.8em;
+    background-color: rgb(237, 236, 239);
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 96%;
+        margin: 2%;
+        background-size: 50%;
+
+    }
+
+    #principal {
+        margin: 1em 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input,
+    option,
+    select {
+        font-size: 1.5rem;
+        margin: 0.1em 0;
+        width: 80%;
+        border-radius: 1.5em;
+        border: rgb(69, 69, 69) solid 1px;
+        background-color: rgb(237, 236, 239);
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    body {
+
+        width: 94%;
+        margin: 3%;
+        background-size: 50%;
+    }
+
+    #principal {
+        margin: 1em 0 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input,
+    option,
+    select {
+        font-size: 1.5rem;
+        margin: 0.1em 0;
+        width: 60%;
+        border-radius: 1.5em;
+        border: rgb(69, 69, 69) solid 1px;
+        background-color: rgb(237, 236, 239);
+        
+
+    }
+}
