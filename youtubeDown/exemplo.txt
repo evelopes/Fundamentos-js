@@ -1,0 +1,4 @@
+ytdl "https://www.youtube.com/watch?v=ILrRbyUxE38" > myvideo.mp4
+
+
+ytdl "https://www.youtube.com/watch?v=ILrRbyUxE38" | ffmpeg -i pipe:0 -b:a 192K -vn myfile.mp3
